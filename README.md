@@ -19,53 +19,35 @@ _本课程我们将学习如何在 GitHub 上进行协同工作。_
 </header>
 
 <!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
+  <<< Author notes: Step 1 >>>
+  Choose 3-5 steps for your course.
+  The first step is always the hardest, so pick something easy!
+  Link to docs.github.com for further explanations.
+  Encourage users to open new tabs for steps!
 -->
 
-## Welcome
+## Step 1: 创建一个 Pull Request
 
-优秀的项目从来不是一个人完成的。Pull Request（简称 PR）是 GitHub 上最重要的协作方式，它让团队成员能够一起查看代码修改、交流意见、提出优化建议，或直接确认变更。通过合理使用 Pull Request，你可以让合作更高效，也让代码更可靠。
+_欢迎来到 "Review pull requests" 课程! :wave:_
 
-- **目标人群**：开发者、GitHub 新手、Git 新用户、学生、管理者或团队成员。
-- **学习内容**：何时以及如何发起审查，并完成对其他人的拉取请求进行审查
-- **您将完成**：我们将通过一个简单的游戏示例演示如何审查PR。
-- **先决条件**：需要你已经了解如何创建分支、提交（commit）和 Pull Request。如果还不熟悉，可以先学习我们的 [GitHub 入门课程](https://github.com/github-china/introduction-to-github)。
-- **课程时长**：大约 30 分钟内可完成。
+我们先从创建一个 Pull Request 开始。
 
-在本课程中，你将完成以下内容：
+**什么是 Pull Request?**: 拉取请求(Pull Request, 简称PR) 是一种团队协作机制，它允许开发者将自己在一个分支上的代码更改“拉取”到另一个分支，并提议将这些更改合并到主代码库中。
+该请求会向其他协作者发出通知，让他们可以查看你所做的更改，包括代码差异、评论和建议。协作者可以进行代码审查，提出意见，并在集成之前进行讨论和修改。
 
-1. 创建一个 Pull Request
-2. 将自己设置为负责人
-3. 进行一次代码审查
-4. 提出修改建议
-5. 应用这些修改
-6. 合并 Pull Request
+### :keyboard: 实操环节: 创建一个 Pull Request
 
-
-### 如何开始本课程
-
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'review-pull-requests',
-  owner: '@me',
-  name: 'skills-review-pull-requests',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
-
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=github-china&template_name=review-pull-requests&owner=%40me&name=skills-review-pull-requests&description=My+clone+repository&visibility=public)
-
-1. 右键点击上方 **Start course** 按钮，选择在新标签页中打开链接。
-2. 在新页面中根据系统提示新建一个仓库。
-   - 仓库名称、描述这些字段系统已经帮我们自动填充好了，您可以按需修改。
-   - 建议选择公开仓库，因为私有仓库有[GitHub Actions 分钟数限制](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)。
-   - 最后点击 Create repository 按钮
-3. 仓库创建完毕后，等待大约 20 秒（等待Action执行），然后刷新页面。注意是刷新您仓库的页面，不是本课程的页面。如果页面没有变化，请继续等待。然后按照 README 中的步骤一步步进行。
-
+1. 打开你仓库页面中的 **Pull requests** tab页。
+2. 点击 **New pull request（新建 Pull Request）**。
+3. 在 **base:** 下拉框中，确认选择的是 **main**。
+4. 在 **compare:** 下拉框中，选择 `update-game` 分支。
+5. 点击 **Create pull request（创建 Pull Request）**。
+6. 在标题栏输入：`Update the game over message`。
+7. 在描述栏输入：
+   `Update the game over message so people know how to play again!`
+   （意思是：更新“游戏结束”提示，让玩家知道怎么重新开始游戏。）
+8. 点击 **Create pull request** 完成创建。
+9. 等待大约 20 秒，然后刷新此页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并带你进入下一步。
 
 <footer>
 
